@@ -1,0 +1,12 @@
+*{
+    margin: auto 7%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.navbar{
+    height: 40px;
+}
+.nav-link{
+    height: 20px !important;
+    float: left;
+    padding-bottom: 1px !important;
+}
