@@ -130,3 +130,81 @@ body{
 .show-sidebar {
     left: 0;
 }
+                  .online-top-up-fixed {
+                      margin: 0 auto;
+                      padding: 0;
+                      border: 0px none;
+                      background: transparent none repeat scroll 0% 0%;
+                      overflow: hidden;
+                      position: fixed;
+                      z-index: 99999;
+                      width: fit-content;
+                      height: 30px;
+                      right: 20px;
+                      bottom: 0px;
+                      border-radius: 5px 5px 0 0; 
+                  }
+                  .online-top-up-fixed > a {
+                      display: flex;
+                      justify-content: center;
+                  }
+                  .online-top-up-fixed .top-up-widget-favicon,
+                  .customer-appointment .top-up-widget-favicon{
+                      text-align: center;
+                      padding: 4px 0;
+                      width: 36px;
+                      background: #e99300;
+                      color: #ffffff;
+                  }
+                  .online-top-up-fixed .top-up-widget-favicon img,
+                  .customer-appointment .top-up-widget-favicon img{
+                      max-height: 22px;
+                  }
+                  .online-top-up-fixed .top-up-widget,
+                  .customer-appointment .top-up-widget{
+                      min-width: 150px;
+                      width: fit-content;
+                      height: 30px;
+                      background: #f9a01b;
+                      box-shadow: chatButtonShadow;
+                      text-align: center
+                  }
+                  .online-top-up-fixed .top-up-widget p,
+                  .customer-appointment .top-up-widget p{
+                      transition: bottom 0.3s ease-in-out;
+                      line-height: 30px;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                      color: #fff;
+                      font-size: 12px;
+                  }
+                  .online-top-up-fixed .top-up-widget p:lang(en) {
+                      font-family: Verdana, Geneva, sans-serif;
+                  }
+                  .online-top-up-fixed .top-up-widget p:lang(km) {
+                      font-family: 'Cellcard';
+                      -moz-osx-font-smoothing: grayscale;
+                      -webkit-font-smoothing: subpixel-antialiased;
+                  }
+                  .customer-appointment {
+                      margin: 0 auto;
+                      padding:0;
+                      border: 0px none;
+                      background: transparent none repeat scroll 0% 0%;
+                      background-color: #f9a01b;
+                      overflow: hidden;
+                      position: fixed;
+                      z-index: 99999;
+                      width: 230px;
+                      height: 30px;
+                      right: 20px;
+                      bottom: 0px;
+                      border-radius: 5px 5px 0 0;
+                  }
+                  .customer-appointment a {
+                      color: #ffffff;
+                      font-size: 12px;
+                  }
+                  .customer-appointment a:lang(en) {
+                      font-family: Verdana, Geneva, sans-serif;
+                  }
