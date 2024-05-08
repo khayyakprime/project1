@@ -135,22 +135,6 @@ body{
 
 /* for support page */
 
-.my-div {
-  transition: transform 0.3s; /* Add smooth transition */
-}
-
-.my-div:hover {
-  transform: scale(0.9); /* Scale down the element on hover */
-  background-color: #f0f0f0; /* Change background color on hover */
-  color: #333; /* Change text color on hover */
-}
-
-.my-div p:hover {
-  background-color: #f0f0f0; /* Change background color on hover */
-  color: #337ab7; /* Change text color on hover */
-}
-
-
 
 /* for footer  */
 

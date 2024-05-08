@@ -12,6 +12,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="pages/header.css">
+      <link rel="stylesheet" href="pages/footer.css">
   </head>
   <body>
     <div class="head">
@@ -20,19 +22,29 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="pages/Corporate_Information.html">INVESTOR RELATIONS</a>
+                <a class="nav-link bot" aria-current="page" href="pages/Corporate_Information.html">
+                  <p>INVESTOR RELATIONS</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link" href="index.html">
+                  <p style="border-bottom: 3px solid #F9A01B;margin: 0;">HOME</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.cellcard.com.kh/en/business/">BUSINESS </a>
+                <a class="nav-link bot" href="https://www.cellcard.com.kh/en/business/">
+                  <p>BUSINESS</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.cellcard.com.kh/en/detail/cellcard-shops/">FIND LOCATIONS</a>
+                <a class="nav-link bot" href="https://www.cellcard.com.kh/en/detail/cellcard-shops/">
+                  <p>FIND LOCATIONS</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.cellcard.com.kh/en/my-cellcard/">CELLCARD APP</a>
+                <a class="nav-link bot" href="https://www.cellcard.com.kh/en/my-cellcard/">
+                  <p>CELLCARD APP</p>
+                </a>
               </li>
             </ul>
             <div class="icon navbar">
@@ -70,57 +82,78 @@
           </div>
         </div>
       </div>
-      <div class="nav-head ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white" style="width: 1300px; margin: auto;">
-          <button id="toggleButton" style="color: gray;width: 50px; height: 50px;">
-            <i id="toggleIcon" class="fas fa-bars" style="font-weight: 600;font-size: 24px;"></i> <!-- Initially, assuming sidebar is hidden -->
-          </button>
-          <div class="sidebar" id="sidebar">
-            <!-- Sidebar Content -->
-            <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
+      <div class="nav-head">
+        <nav class="navbar navbar-expand-lg p-0 container" style="width: 1170px; margin: auto; background-color: rgba(240, 248, 255, 0);">
+          <div class="slide-menu">
+            <button class="open-hamburger" id="open-button">
+              <i id="toggleIcon" class="fas fa-bars" style="font-weight: 600;font-size: 24px; color: rgb(177, 177, 177);"></i> <!-- Initially, assuming sidebar is hidden -->
+            </button>
           </div>
-          <a href="">
-            <img src="img/logo/logo-for-reach-02-1.png" style="width: 200px;">
-          </a>
+          <div class="logo">
+            <a href="https://www.cellcard.com.kh/en">
+              <img src="../img/logo/logo-for-reach-02-1.png" alt="Cellcard">
+            </a>
+          </div>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link active" aria-current="page" href="#">OFFERS</a>
-                <div class="dropdown-content">
-                  <h3>Prepaid Plans</h3>
-                  <div class="image-row">                          <a href="#"><img src="./image/africa.webp" alt=""><p>Africa</p></a>
-                    <a href="#"><img src="./image/americas.webp" alt=""><p>Americas</p></a>
-                    <a href="#"><img src="./image/south-east-asia.webp" alt=""><p>South-East Asia</p></a>
+                  <a class="nav-link bot" aria-current="page" href="#"
+                  data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    OFFERS
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="row" style="font-size: 20px;">
+                      <div class="col"><a href="#">Prepaid Plans</a></div>
+                      <div class="col"><a href="#">Add-Ons</a></div>
+                      <div class="col"><a href="#">Top-Up</a></div>
+                      <div class="col"><a href="#">International Services</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><a href="#">Cellcard Serey+</a></div>
+                      <div class="col"><a href="#">Social Pack</a></div>
+                      <div class="col"><a href="#">Online Top Up</a></div>
+                      <div class="col"><a href="#">International Roaming</a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><a href="#">Cellcard eSIM</a></div>
+                      <div class="col"><a href="#">DATA+</a></div>
+                      <div class="col"><a href="#">Schedule Top Up</a></div>
+                      <div class="col"><a href="#"></a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><a href="#">Cellcard Home Wi-Fi</a></div>
+                      <div class="col"><a href="#"></a></div>
+                      <div class="col"><a href="#">30 Ways To Top Up Online</a></div>
+                      <div class="col"><a href="#"></a></div>
+                    </div>
                   </div>
-                  <div class="image-row">
-                    <a href="#"><img src="./image/europe.webp" alt=""><p>Europe</p></a>
-                    <a href="#"><img src="./image/eastern-mediterranean.webp" alt=""><p>Eastern Mdediteranean</p></a>
-                    <a href="#"><img src="./image/western-pacific.webp" alt=""><p>Werstern Pacific</p></a>
-                  </div>
-                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/support.html">SUPPPORT</a>
+                <a class="nav-link bot" href="pages/support.html">
+                  <p>SUPPPORT</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">NETWORK</a>
+                <a class="nav-link bot" href="#">
+                  <p>NETWORK</p>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">English</a>
+                <a class="nav-link bot" href="#" style="color: F9A01B;">English</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ភាសារខ្មែរ</a>
+                <a class="nav-link bot" href="#">ភាសារខ្មែរ</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-    </div> 
-  </div>
+        </nav>
+      </div> 
+    </div>
   <div id="carouselExampleInterval" class="carousel carousel-dark carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -130,7 +163,7 @@
       <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
+      <div class="carousel-item active" data-bs-interval="5000">
         <img src="img/HomeWiFi-Hero-Banner-desktop_1440-X-500px-eng.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
@@ -160,6 +193,7 @@
     <div class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid justify-content-center">
         <div class="row">
+          <div class="col"><a href="#">Action</a></div>
           <h2 class="text-center m-5">What would you like to do?</h2>
             <div class="col-sm-4 d-inline p-0">
               <div class="wrapper-list text-center">
@@ -244,92 +278,102 @@
       </div>
     </div>
   </div>
-<div class="based service p-5">
-  <div class="row" style=" padding: 20px;">
-    <div class="col-md-6 offset-md-3 center-div">
-      <h4>Cellcard's Latest Network Achievement Awards</h4>
-    </div>
-  </div>        
-  <div class="row">
-    <div class="col my-div">
-      <img src="img/Artboard-1.png" alt="">
-      <p>
-          Based on the latest Ookla Speedtest Awards, Cellcard users experienced the fastest download speeds in Cambodia during Q3-Q4 2023, reaching an impressive 33.74 Mbps, surpassing those of competitors.
-      </p>
-    </div>
-    <div class="col my-div">
-      <img src="img/Artboard-1-copy-7.png" alt="">
-      <p>   
-        Cellcard is recognized as Cambodia’s Best Mobile Gaming Experience during Q3-Q4 2023 by Ookla’s Speedtest Awards, announced at Mobile World Congress (MWC) held in Barcelona this February 2024.
-      </p>
-    </div>
-    <div class="col my-div">
-      <img src="img/Artboard-1-copy-10.png" alt="">
-      <p>     
-        The latest "Mobile Network Experience" by Opensignal for the period from October 1 to December 29, 2023. Opensignal has awarded Cellcard the most deserving winner of the "Download Speed Experience" awards, as well as 2 other joint awards for "Video Experience" and "LIVE Video Experience "According to the latest report.
-      </p>
-    </div>
-  </div>      
-</div>
-<footer class="text-center">
-  <div class="m-5">
+  <div class="based service p-5">
+    <div class="row" style=" padding: 20px;">
+      <div class="col-md-6 offset-md-3 center-div">
+        <h4>Cellcard's Latest Network Achievement Awards</h4>
+      </div>
+    </div>        
     <div class="row">
-      <div class="col">
-        <a href=""><img src="img/logo/logo-for-reach-02-1.png" style="width: 200px;"></a>
-        <p>Launched in 1997, Cellcard has become Cambodia's standard for quality, value and service, and continues to be vigilant in developing new ways to support and enhance the way its customers communicate through regular network upgrades, development of innovative plans and products, and putting an emphasis on customer care.</p>
+      <div class="col"><a href="#">Action</a></div>
+      <div class="col di">
+        <div class="cover">
+          <a href="">
+            <img src="img/Artboard-1.png" alt="">
+          </a>
+        </div>
+        <p class="p-blue">
+            Based on the latest Ookla Speedtest Awards, Cellcard users experienced the fastest download speeds in Cambodia during Q3-Q4 2023, reaching an impressive 33.74 Mbps, surpassing those of competitors.
+        </p>
       </div>
-      <div class="col foot-div">
-        <h4>I WANT TO</h4>
-        <p><a href="#" style="color: gray;">Top-Up</a></p>
+      <div class="col di">
+        <div class="cover">
+          <a href="">
+            <img src="img/Artboard-1-copy-7.png" alt="">
+          </a>
+        </div>
+        <p class="p-blue">   
+          Cellcard is recognized as Cambodia’s Best Mobile Gaming Experience during Q3-Q4 2023 by Ookla’s Speedtest Awards, announced at Mobile World Congress (MWC) held in Barcelona this February 2024.
+        </p>
       </div>
-      <div class="col">
-        <h4>HELP AND SUPPORT</h4>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Find Locations</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
+      <div class="col di">
+        <div class="cover">
+          <a href="">
+            <img src="img/Artboard-1-copy-10.png" alt="">
+          </a>
+        </div>
+        <p class="p-blue">     
+          The latest "Mobile Network Experience" by Opensignal for the period from October 1 to December 29, 2023. Opensignal has awarded Cellcard the most deserving winner of the "Download Speed Experience" awards, as well as 2 other joint awards for "Video Experience" and "LIVE Video Experience "According to the latest report.
+        </p>
       </div>
-      <div class="col">
-        <h4>CONNECT WITH CELLCARD</h4>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Awards</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Media Center</a></li>
-        </ul>
-      </div>
-    </div>
+    </div>      
   </div>
-  <p style="text-align: center;margin-top: 2%;">© 2024, All Rights Reserved</p>
-</footer>
-  
-<div class="online-top-up-fixed">
-  <a href="https://www.cellcard.com.kh/en/top-up/online-top-up/">    
-    <div class="top-up-widget-favicon">
-      <img src="img/logo/money.png">
+  <footer class="text-center">
+    <div class="m-5">
+      <div class="row">
+        <div class="col"><a href="#">Action</a></div>
+        <div class="col">
+          <a href=""><img src="img/logo/logo-for-reach-02-1.png" style="width: 200px;"></a>
+          <p>Launched in 1997, Cellcard has become Cambodia's standard for quality, value and service, and continues to be vigilant in developing new ways to support and enhance the way its customers communicate through regular network upgrades, development of innovative plans and products, and putting an emphasis on customer care.</p>
+        </div>
+        <div class="col foot-div">
+          <h4>I WANT TO</h4>
+          <p><a href="#" style="color: gray;">Top-Up</a></p>
+        </div>
+        <div class="col">
+          <h4>HELP AND SUPPORT</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Find Locations</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>CONNECT WITH CELLCARD</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media Center</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="top-up-widget">
-      <!-- <p><?php//_e("Top Up Now and Save 5%", "cellcard"); ?></p> -->
-      <p>Top-Up Now!</p>
-    </div>
-  </a>
-</div>          
+  </footer>
+  <p style="text-align: center;margin-top: 1%;">© 2024, All Rights Reserved</p>
+  <div class="online-top-up-fixed">
+    <a href="https://www.cellcard.com.kh/en/top-up/online-top-up/">    
+      <div class="top-up-widget-favicon">
+        <img src="img/logo/money.png">
+      </div>
+      <div class="top-up-widget">
+        <!-- <p><?php//_e("Top Up Now and Save 5%", "cellcard"); ?></p> -->
+        <p>Top-Up Now!</p>
+      </div>
+    </a>
+  </div>          
 <!-- Customer Appointment -->
-<div class="customer-appointment d-none">
-  <a href="https://gmsqp.net/ap/home/indexqra/?id=CfDJ8PqPzRG7AL5BlVcG9K0wT-qHHH-4CylhmBlD6P4DvZyon0h8wOng-xT7cSrE8U5b6waTAuLSzADiUom5_qFQn4gB6REywFpVP5eFW7j4yFfQNyb3xw0rMsosgV9n4gYLnRouup7LcFg7Mc1at_CmkgkDyw6_AosmQm0J974IxiIBAgao6j3-fYSpUFPtJiOs5g&amp;culture=en-MY">
+  <div class="customer-appointment d-none">
+    <a href="https://gmsqp.net/ap/home/indexqra/?id=CfDJ8PqPzRG7AL5BlVcG9K0wT-qHHH-4CylhmBlD6P4DvZyon0h8wOng-xT7cSrE8U5b6waTAuLSzADiUom5_qFQn4gB6REywFpVP5eFW7j4yFfQNyb3xw0rMsosgV9n4gYLnRouup7LcFg7Mc1at_CmkgkDyw6_AosmQm0J974IxiIBAgao6j3-fYSpUFPtJiOs5g&amp;culture=en-MY">
     <div class="top-up-widget-favicon">
       <img src="http://www.cellcard.com.kh/c/uploads/2021/06/customer-appointment.png">
     </div>
     <div class="top-up-widget">
       <p>Customer Appointment</p>
     </div>
-  </a>
-</div>
-</div> <!-- .container-fluid -->  
-</div> <!-- .footer -->           
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
 </html>
