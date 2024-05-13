@@ -1,332 +1,331 @@
-  
 .language-selector {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    width: 250px;
-    position: relative;
-    font-size: 20px;
-    background-color: #274375;
-    height: 100%;
-    color: white;
-    padding: 30px 10px 20px;
-    margin-top: -74px;
-    cursor: pointer;
-    margin-left: 1150px;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center vertically */
+  width: 250px;
+  position: relative;
+  font-size: 20px;
+  background-color: #274375;
+  height: 100%;
+  color: white;
+  padding: 30px 10px 20px;
+  margin-top: -74px;
+  cursor: pointer;
+  margin-left: 1150px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
   
-  .language-selector .language-selector select {
-      margin-left: 15px; /* Add space between icon and select */
-  }
+.language-selector .language-selector select {
+  margin-left: 15px; /* Add space between icon and select */
+}
+
+.language-selector:hover {
+  background-color: #005da8;
+}
   
+.language-selector label {
+  display: block;
+}
   
+.language-selector select {
+  display: none;
+}
   
+.language-selector:hover select {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+}
   
-  .language-selector:hover {
-      background-color: #005da8;
-  }
+.language-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+}
   
-  .language-selector label {
-      display: block;
-  }
-  
-  .language-selector select {
-      display: none;
-  }
-  
-  .language-selector:hover select {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #fff;
-      color: #333;
-      cursor: pointer;
-      font-size: 16px;
-      /* padding: 5px; */
-  }
-  
-  .language-selector select:focus {
-      outline: none;
-      border-color: #007bff;
-  }
-  
-  .language-selector .icon {
-      position: absolute;
-      right: 5px;
-      top: 60%;
-      transform: translateY(-50%);
-      pointer-events: none;
-  }
+.language-selector .icon {
+  position: absolute;
+  right: 5px;
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
   
   /* Custom arrow */
-  .language-selector .icon::after {
-      content: '\f107'; /* Unicode for down arrow */
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      color: #fff;
-      font-size: 22px;
-  }
-  
+.language-selector .icon::after {
+  content: '\f107'; /* Unicode for down arrow */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #fff;
+  font-size: 22px;
+}
+
   /* for support page */
-  .based{
-    background-color: #fafafa;
-  }
+.based{
+  background-color: #fafafa;
+  padding: 0px 150px;
+}
   
-  .di{
-    position: relative;
-    width: 100%;
-    float: left;
-    background-color: transparent;
-  }
-  .di .cover{
-    float: left;
-      width: 100%;
-      background-color: transparent;
-      border-radius: 10px;
-      overflow: hidden;
-  }
-  .di .cover a{
-    text-decoration: none;
-      outline: 0 !important;
-      cursor: pointer;
-  }
-  .di .cover a img {
-    background-color: #f9a01b;
-    display: inline-block;
-    max-width: 100%;
-    opacity: 1;
-    transition: transform 0.3s; /* Add smooth transition */
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-    width: 100%;
-  }
-  .di .cover a img:hover {
-    transform: scale(1.05); /* Scale down the element on hover */
-    background-color: #f0f0f0; /* Change background color on hover */
-    color: #333; /* Change text color on hover */
-    -ms-transform: scale(1.1) rotate(2deg);
-    -webkit-transform: scale(1.1) rotate(2deg);
-    transform: scale(1.1) rotate(2deg);
-    opacity: .95;
-  }
+.di{
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: transparent;
+}
+
+.di .cover{
+  float: left;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.di .cover a{
+  text-decoration: none;
+  outline: 0 !important;
+  cursor: pointer;
+}
+
+.di .cover a img {
+  background-color: #f9a01b;
+  display: inline-block;
+  max-width: 100%;
+  opacity: 1;
+  transition: transform 0.3s; /* Add smooth transition */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  width: 100%;
+}
+
+.di .cover a img:hover {
+  transform: scale(1.05); /* Scale down the element on hover */
+  background-color: #f0f0f0; /* Change background color on hover */
+  color: #333; /* Change text color on hover */
+  -ms-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1) rotate(2deg);
+  opacity: .95;
+}
   
-  .p-blue:hover {
-    color: #337ab7; /* Change text color on hover */
-  }
-  
-  
-  
+.p-blue:hover {
+  color: #337ab7; /* Change text color on hover */
+}
   /* for footer  */
-  
-  
-  footer {
-    background-color: #eaeaea;
-    color: #fff;
-    padding: 15px 0;
-    margin: auto;
-  }
-  
-  .footer {
-    position: fixed;
-    width: 100%;
-    background-color:#eaeaea;
-    color: white;
-    text-align: center;
-  }
-  
+footer {
+  background-color: #eaeaea;
+  color: #fff;
+  padding: 15px 0;
+  margin: auto;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  background-color:#eaeaea;
+  color: white;
+  text-align: center;
+}
     /* Styling for the footer links */
-    .footer-links li {
-      margin-bottom: 10px;
-    }
-  
+.footer-links li {
+  margin-bottom: 10px;
+}
   /* Styling for the footer links */
-  .footer-links a {
-    color: #646970;
-    margin-right: 20px;
-    text-decoration: none;
-  }
+.footer-links a {
+  color: #646970;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.text-center .ms-5 .row{
+  margin: 0 50px;
+}
   
-  .row h4 {
-    color: #646970;
-    font-weight: 300;
-    font-size: 30px;
-    text-align: center;
-  }
+.row h5 {
+  color: #646970;
+  font-weight: 270;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container h5 {
+  color: #646970;
+  font-weight: 300;
+}
+
+p {
+  color:  #646970;
+}
+.foot-div p{
+  margin: 0;
+}
+.foot-div p a{
+  color: gray;
+  text-decoration: none;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ba a img{
+  width: 280px;
+}
+
+.ba p{
+  text-align: start; 
+  padding: 20px; 
+  font-size: 12px;
+}
   
-  .row1 h4 {
-    color: #F8A018;
-    font-weight: 300;
-    font-size: 30px;
-  }
-  
-  .container h4 {
-    color: #646970;
-    font-weight: 300;
-    font-size: 20px;
-  }
-  
-  p {
-    color:  #646970;
-  }
-  
-  
-     /* Button styling */
-     .my-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #2c90b5; /* Button background color */
-      color: #fff; /* Button text color */
-      border: none; /* Remove button border */
-      border-radius: 20px; /* Button border radius */
-      font-size: 16px; /* Button text size */
-      cursor: pointer; /* Change cursor to pointer on hover */
-      transition: background-color 0.3s; /* Smooth transition for background color */
-    }
-  
-  
-     /* Styling for the map container */
-     #map-container {
-      width: 100%;
-      height: 400px; /* Adjust height as needed */
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-  
-    /* Styling for the search bar */
-    .search-bar {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box; /* Ensure padding is included in width */
-      margin-bottom: 20px;
-    }
-  
-    .button-container {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-  
-  
-  
-    .position-absolute.start-0 {
-      left: 0;
-    }
-    
-    .translate-middle-y {
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    
-  
-  
-    .container {
-      margin-top: 50px; /* Add some margin from the top */
-      background-color: #fff; /* White background for the container */
-      border-radius: 10px; /* Rounded corners */
-      padding: 20px; /* Add padding */
-    }
-    h1 {
-      color: #007bff; /* Blue color for headings */
-      margin-bottom: 20px; /* Add some space below the heading */
-    }
-    ul {
-      padding-left: 0; /* Remove default padding */
-    }
-    li {
-      padding-left: 20px; /* Add left padding to list items */
-      margin-bottom: 10px; /* Add space between list items */
-    }
-  
-    .foot-div a {
-      color: gray;
-    }
-  
-    .online-top-up-fixed {
-      margin: 0 auto;
-      padding: 0;
-      border: 0px none;
-      background: transparent none repeat scroll 0% 0%;
-      overflow: hidden;
-      position: fixed;
-      z-index: 99999;
-      width: fit-content;
-      height: 30px;
-      right: 20px;
-      bottom: 0px;
-      border-radius: 5px 5px 0 0; 
-  }
-  .online-top-up-fixed > a {
-    display: flex;
-    justify-content: center;
-  }
-  .online-top-up-fixed .top-up-widget-favicon,
-  .customer-appointment .top-up-widget-favicon{
-    text-align: center;
-    padding: 4px 0;
-    width: 36px;
-    background: #e99300;
-    color: #ffffff;
-  }
-  .online-top-up-fixed .top-up-widget-favicon img,
-  .customer-appointment .top-up-widget-favicon img{
-    max-height: 22px;
-  }
-  .online-top-up-fixed .top-up-widget,
-  .customer-appointment .top-up-widget{
-    min-width: 150px;
-    width: fit-content;
-    height: 30px;
-    background: #f9a01b;
-    text-align: center
-  }
-  .online-top-up-fixed .top-up-widget p,
-  .customer-appointment .top-up-widget p{
-    transition: bottom 0.3s ease-in-out;
-    line-height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #fff;
-    font-size: 12px;
-  }
-  .online-top-up-fixed .top-up-widget p:lang(en) {
-    font-family: Verdana, Geneva, sans-serif;
-  }
-  .online-top-up-fixed .top-up-widget p:lang(km) {
-    font-family: 'Cellcard';
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
-  .customer-appointment {
-    margin: 0 auto;
-    padding:0;
-    border: 0px none;
-    background: transparent none repeat scroll 0% 0%;
-    background-color: #f9a01b;
-    overflow: hidden;
-    position: fixed;
-    z-index: 99999;
-    width: 230px;
-    height: 30px;
-    right: 20px;
-    bottom: 0px;
-    border-radius: 5px 5px 0 0;
-  }
-  .customer-appointment a {
-    color: #ffffff;
-    font-size: 12px;
-  }
-  .customer-appointment a:lang(en) {
-    font-family: Verdana, Geneva, sans-serif;
-  }
+/* Button styling */
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c90b5; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 20px; /* Button border radius */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+
+ /* Styling for the map container */
+ #map-container {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  margin-bottom: 20px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.position-absolute.start-0 {
+  left: 0;
+}
+
+.translate-middle-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container {
+  margin-top: 50px; /* Add some margin from the top */
+  background-color: #fff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding */
+}
+
+.online-top-up-fixed {
+  margin: 0 auto;
+  padding: 0;
+  border: 0px none;
+  background: transparent none repeat scroll 0% 0%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  width: fit-content;
+  height: 30px;
+  right: 20px;
+  bottom: 0px;
+  border-radius: 5px 5px 0 0; 
+}
+
+.online-top-up-fixed > a {
+  display: flex;
+  justify-content: center;
+}
+
+.online-top-up-fixed .top-up-widget-favicon,
+.customer-appointment .top-up-widget-favicon{
+  text-align: center;
+  padding: 4px 0;
+  width: 36px;
+  background: #e99300;
+  color: #ffffff;
+}
+
+.online-top-up-fixed .top-up-widget-favicon img,
+.customer-appointment .top-up-widget-favicon img{
+  max-height: 22px;
+}
+
+.online-top-up-fixed .top-up-widget,
+.customer-appointment .top-up-widget{
+  min-width: 150px;
+  width: fit-content;
+  height: 30px;
+  background: #f9a01b;
+  text-align: center
+}
+
+.online-top-up-fixed .top-up-widget p,
+.customer-appointment .top-up-widget p{
+  transition: bottom 0.3s ease-in-out;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.online-top-up-fixed .top-up-widget p:lang(en) {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.online-top-up-fixed .top-up-widget p:lang(km) {
+  font-family: 'Cellcard';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.customer-appointment {
+  margin: 0 auto;
+  padding:0;
+  border: 0px none;
+  background: transparent none repeat scroll 0% 0%;
+  background-color: #f9a01b;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  width: 230px;
+  height: 30px;
+  right: 20px;
+  bottom: 0px;
+  border-radius: 5px 5px 0 0;
+}
+
+.customer-appointment a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.customer-appointment a:lang(en) {
+  font-family: Verdana, Geneva, sans-serif;
+}
