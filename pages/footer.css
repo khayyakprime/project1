@@ -235,13 +235,6 @@ p {
   transform: translateY(-50%);
 }
 
-.container {
-  margin-top: 50px; /* Add some margin from the top */
-  background-color: #fff; /* White background for the container */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Add padding */
-}
-
 .online-top-up-fixed {
   margin: 0 auto;
   padding: 0;
